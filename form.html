@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+
+<body>
+
+    <center><h1 style="text-decoration:underline overline;">Application Form</h1></center>
+    <form method="post">
+
+        <fieldset>
+        <legend style="text-align:center;">Application</legend>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Username" autofocus><br><hr>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="13" max="30" placeholder="age"><br><hr>
+
+        <label for="mail">Email:</label><br>
+        <input type="email" id="mail" name="Email" placeholder="abc@gmail.com"><br><hr>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="passsword" placeholder="Enter strong password"><br><hr>
+
+        <label for="phone">Ph. No:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Mobile Number"><br><hr>
+
+        <label for="description">User Description</label><br>
+        <textarea id="description" placeholder="Enter text..."></textarea><br><hr>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+</body>
+</html>
