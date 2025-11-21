@@ -6,30 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application Form</title>
+    <style>
+        label{
+            font-weight: bold;
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-color:cadetblue;">
 
-    <center><h1 style="text-decoration:underline overline;">Application Form</h1></center>
-    <form method="post">
+    <form method="post" target="_blank" action="">
 
-        <fieldset>
-        <legend style="text-align:center;">Application</legend>
+        <fieldset  style="background-color:bisque;">
+        <legend style="text-align:center; font-weight:bolder; font-size: 40px; text-decoration:underline overline;">Application</legend>
 
         <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Username" autofocus><br><hr>
+        <input type="text" id="name" name="name" placeholder="Username" autofocus required><br><hr>
 
         <label for="age">Age:</label><br>
-        <input type="number" id="age" name="age" min="13" max="30" placeholder="age"><br><hr>
+        <input type="number" id="age" name="age" min="13" max="30" placeholder="age" required><br><hr>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="Male" name="gender" value="male">Male<br>
+        <input type="radio" id="Female" name="gender" value="female">Female<br><hr>
 
         <label for="mail">Email:</label><br>
-        <input type="email" id="mail" name="Email" placeholder="abc@gmail.com"><br><hr>
+        <input type="email" id="mail" name="Email" placeholder="abc@gmail.com" required><br><hr>
 
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name="passsword" placeholder="Enter strong password"><br><hr>
+        <input type="password" id="password" name="passsword" placeholder="Enter strong password" required><br><hr>
+
+        <label for="date">Date of Application:</label><br>
+        <input type="date" id="date" name="date"><br><hr>
 
         <label for="phone">Ph. No:</label><br>
         <input type="tel" id="phone" name="phone" placeholder="Mobile Number"><br><hr>
+
+        <label for="post">Post:</label><br>
+        <select id="post">
+            <option>Administrator</option>
+            <option>Manager</option>
+            <option>Supervisor</option>
+            <option>Head Staff</option>
+            <option>Staff</option>
+        </select><br><hr>
+
+        <label>Time Availability:</label><br>
+        <input type="checkbox" id="morning" name="time" value="morning">Morning<br>
+        <input type="checkbox" id="afternoon" name="time" value="afternoon">Afternoon<br>
+        <input type="checkbox" id="evening" name="time" value="evening">Evening<br>
+        <input type="checkbox" id="night" name="time" value="night">Night<br><hr>
+
+        <label for="file">Upload file:</label><br>
+        <input type="file" id="file" name="file"><br><hr>
 
         <label for="description">User Description</label><br>
         <textarea id="description" placeholder="Enter text..."></textarea><br><hr>
@@ -37,6 +66,15 @@
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
         </fieldset>
+        <footer>
+            <address>
+                Written by Swastik Malke.<br>
+                Contact us at:<br>
+                <a href="mailto:swastikmalke@gmail.com">swastikmalke@gmail.com</a><br>
+                PU, Waghodia<br>
+                India.
+            </address>
+        </footer>
     </form>
 
 </body>
