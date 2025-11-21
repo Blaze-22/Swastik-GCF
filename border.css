@@ -1,0 +1,7 @@
+#name{
+    border-style: dotted double double groove;
+    border-width: 2px 3px 1px 2px;
+    border-color:aqua dodgerblue blue darkblue;
+    border-radius: 5px;
+    text-align: center;
+}
