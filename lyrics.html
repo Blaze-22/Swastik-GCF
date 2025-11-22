@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Scrolling Lyrics Panel</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #ff8c00;
+    overflow: hidden;
+  }
+
+  .lyrics-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Lyrics block scrolling upward */
+  .lyrics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100vh; /* start below screen */
+    animation: scrollUp 120s linear forwards;
+  }
+
+  /* Base style for all lines */
+  .lyrics p {
+    font-size: 28px;
+    color: rgba(255,255,255,0.6);
+    margin: 20px 0;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transform: scale(1);
+    animation: highlight 3s ease-in-out forwards;
+  }
+
+  /* Animate highlight for each line using delay */
+  .lyrics p:nth-child(1)  { animation-delay: 0s; }
+  .lyrics p:nth-child(2)  { animation-delay: 3s; }
+  .lyrics p:nth-child(3)  { animation-delay: 6s; }
+  .lyrics p:nth-child(4)  { animation-delay: 9s; }
+  .lyrics p:nth-child(5)  { animation-delay: 12s; }
+  .lyrics p:nth-child(6)  { animation-delay: 15s; }
+  .lyrics p:nth-child(7)  { animation-delay: 18s; }
+  .lyrics p:nth-child(8)  { animation-delay: 21s; }
+  .lyrics p:nth-child(9)  { animation-delay: 24s; }
+  .lyrics p:nth-child(10) { animation-delay: 27s; }
+  .lyrics p:nth-child(11) { animation-delay: 30s; }
+  .lyrics p:nth-child(12) { animation-delay: 33s; }
+  .lyrics p:nth-child(13) { animation-delay: 36s; }
+  .lyrics p:nth-child(14) { animation-delay: 39s; }
+  .lyrics p:nth-child(15) { animation-delay: 42s; }
+  .lyrics p:nth-child(16) { animation-delay: 45s; }
+  .lyrics p:nth-child(17) { animation-delay: 48s; }
+  .lyrics p:nth-child(18) { animation-delay: 51s; }
+  .lyrics p:nth-child(19) { animation-delay: 54s; }
+  .lyrics p:nth-child(20) { animation-delay: 57s; }
+  /* Continue similarly for all remaining lines with +3s each */
+
+  /* Highlight keyframe */
+  @keyframes highlight {
+    0%   { color: rgba(255,255,255,0.6); transform: scale(1); text-shadow: 0 0 5px rgba(0,0,0,0.5);}
+    25%  { color: #ffffff; transform: scale(1.4); text-shadow: 0 0 20px #fff;}
+    75%  { color: #ffffff; transform: scale(1.2); text-shadow: 0 0 10px #fff;}
+    100% { color: rgba(255,255,255,0.6); transform: scale(1); text-shadow: 0 0 5px rgba(0,0,0,0.5);}
+  }
+
+  @keyframes scrollUp {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-100%); }
+  }
+</style>
+</head>
+<body>
+
+<div class="lyrics-container">
+  <div class="lyrics">
+    <p>Tera mera afsana</p>
+    <p>Poora hoya naa jaana</p>
+    <p>Pal-pal jeena muhaal mera tere bina</p>
+    <p>Yeh saaray nashay bekaar teri aankhon ke siwa</p>
+    <p>Mere khuwabon main aa naa kar ke solah singhaar</p>
+
+    <p>Mein ab kyun hosh main aata nahi?</p>
+    <p>Sukoon yeh dil kyun paata nahi?</p>
+    <p>Kyun torrun khud se jo thay waaday</p>
+    <p>Ke ab yeh ishq nibhaana nahi?</p>
+    <p>Mein morrun tum se jo yeh chehra</p>
+    <p>Dobara nazar milana nahi</p>
+    <p>Yeh duniya jaanay mera dard</p>
+    <p>Tujhe yeh nazar kyun aata nahi?</p>
+
+    <p>Sohneya, yoon tera sharmana meri jaan naa lele</p>
+    <p>Kaan ke peeche zulf chhupana, meri jaan, kya kehne</p>
+    <p>Zaalima, tauba tera nakhra, iss ke waar, kya kehne</p>
+    <p>Thaam ke bethe dil ko ghaayal, kahin haar naa bеthein</p>
+
+    <p>Teri nazrein mujh se kya kehti hain?</p>
+    <p>Inn main wafa behti hai</p>
+    <p>Thori-thori si raazi, thori si khafa rehti hain</p>
+    <p>Loug hain zaalim baray, inn may jafaa dekhi hai</p>
+    <p>Yeh duniya teri nahi, mein ne tujh main hayaa dekhi hai</p>
+
+    <p>Jeena muhaal mera tere bina</p>
+    <p>Yeh saaray nashay bekaar teri aankhon ke siwa</p>
+    <p>Ghar nahi jaata, mein bahar, rehta tera intezaar</p>
+    <p>Mere khuwabon may aa naa kar ke solah singhaar</p>
+
+    <p>Tera mera afsana, poora hoya naa jaana</p>
+    <p>Hovaan band kamray vich kalla</p>
+    <p>Fir vi disda ae parshaavaan</p>
+    <p>Saaray puchde ne mennu</p>
+    <p>Kyun main gallan naee karda</p>
+    <p>Kinnay sohne ne chehre ethe</p>
+    <p>Dil kyun naeee ay bharda</p>
+    <p>Je naa deedaar hoya</p>
+    <p>Ohna chirr din naiyo charhda</p>
+    <p>Dil karay dildaariyan</p>
+    <p>Bina gallan saareyaan naa larrda</p>
+    <p>Jidaan rang milde ne odha he aapan mil jaana</p>
+    <p>Jidaan phull khilde ne odha he donaa khill jaana</p>
+    <p>Jidaan rang milde ne odha he aapan mil jaana</p>
+    <p>Jidaan phull khilde ne odha he donaa khill jaana</p>
+
+    <p>Tera mera afsana</p>
+    <p>Pal-pal jeena muhaal</p>
+    <p>Poora hoya naa jaana</p>
+    <p>Saaray nashay bekaar</p>
+    <p>Hovaan band kamray vich kalla</p>
+    <p>Ghar nahi jaata, mein bahar</p>
+    <p>Kinnay sohne ne chehre ethe</p>
+    <p>Kar ke solah singhaar</p>
+  </div>
+</div>
+
+</body>
+</html>
