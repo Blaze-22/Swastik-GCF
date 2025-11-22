@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align:center;
+            margin-top: 100px;
+            background-color: black;
+            font-family: sans-serif;
+        }
+        #switch{
+            display:none;
+        }
+        .bulb{
+            width:100px;
+            height:100px;
+            background-color: gray;
+            border-radius: 50%;
+            margin: 20px auto;
+            transition: background-color 0.3s;
+        }
+        #switch:checked + .bulb{
+            background-color: rgb(245, 241, 15);
+            box-shadow: 0 0 20px rgb(241, 220, 122);
+        }
+        label{
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="switch">
+    <div class="bulb"></div>
+    <label for="switch">Turn On/Off"></label>
+</body>
+</html>
